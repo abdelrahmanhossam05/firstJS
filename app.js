@@ -1,5 +1,4 @@
-let str="Frontend Simplified"
+// First way of accessing element
+document.querySelector('#title')
 
-for (let i=0; i< str.length; i++) {
-    console.log(str[i]);
-}
+// Second way of accessing element
