@@ -1,17 +1,10 @@
-// First way of accessing element
-document.querySelector('#title').innerHTML += " Hossam Abouadma"
+// fetch('https://jsonplaceholder.typicode.com/users/1')
+const emailRef = document.querySelector('.email')
+// 1. Then
+fetch('https://jsonplaceholder.typicode.com/users/1').then(response => {
+    response.json().then(data => {
+        emailRef.innerHTML = data.email;
+    })
+})
 
-// Second way of accessing element
-// document.getElementById('title')
-
-//change css
-// document.querySelector('#title').style.fontSize = '16px'
-
-// function changeTitleToRed() {
-//     document.querySelector('#title').style.color = 'red'
-//     console.log('clicked')
-// }
-
-function toggleDarkMode() {
-    document.querySelector('body').classList.toggle('dark-theme')
-}
+// 2. Async/Await
