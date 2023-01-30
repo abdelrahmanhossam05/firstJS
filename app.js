@@ -24,8 +24,14 @@
 
 // console.log(sum(2, 4));
 
-function hoursintoseconds(hour){
-    return hour*3600;
+// function hoursintoseconds(hour){
+//     return hour*3600;
+// }
+
+// console.log(hoursintoseconds(3));
+
+function calcPerimeter(base, height){
+    return 2*base + 2*height;
 }
 
-console.log(hoursintoseconds(3));
+console.log(calcPerimeter(2, 2));
