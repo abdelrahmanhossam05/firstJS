@@ -30,8 +30,14 @@
 
 // console.log(hoursintoseconds(3));
 
-function calcPerimeter(base, height){
-    return 2*base + 2*height;
+// function calcPerimeter(base, height){
+//     return 2*base + 2*height;
+// }
+
+// console.log(calcPerimeter(10, 2));
+
+function calcAreaTriangle(base, height){
+    return 0.5 * base * height;
 }
 
-console.log(calcPerimeter(2, 2));
+console.log(calcAreaTriangle(10, 2));
