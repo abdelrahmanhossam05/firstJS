@@ -42,8 +42,14 @@
 
 // console.log(calcAreaTriangle(20, 20));
 
-function appendFrontend(str){
-    return str + 'Frontend'
-}
+// function appendFrontend(str){
+//     return str + 'Frontend'
+// }
 
-console.log(appendFrontend('hello'))
+// console.log(appendFrontend('hello'))
+
+function sumGreaterThan100(num1, num2) {
+    if(num1 + num2 > 100) return true;
+    else return false;
+}
+console.log(sumGreaterThan100(51, 50));
