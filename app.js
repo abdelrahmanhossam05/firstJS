@@ -36,8 +36,14 @@
 
 // console.log(calcPerimeter(10, 2));
 
-function calcAreaTriangle(base, height){
-    return 0.5 * base * height;
+// function calcAreaTriangle(base, height){
+//     return 0.5 * base * height;
+// }
+
+// console.log(calcAreaTriangle(20, 20));
+
+function appendFrontend(str){
+    return str + 'Frontend'
 }
 
-console.log(calcAreaTriangle(10, 2));
+console.log(appendFrontend('hello'))
