@@ -18,8 +18,14 @@
 
 
 
-function sum(num1, num2){
-    return num1+num2;
+// function sum(num1, num2){
+//     return num1+num2;
+// }
+
+// console.log(sum(2, 4));
+
+function hoursintoseconds(hour){
+    return hour*3600;
 }
 
-console.log(sum(2, 4));
+console.log(hoursintoseconds(3));
