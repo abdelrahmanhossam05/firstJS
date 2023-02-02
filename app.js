@@ -48,8 +48,14 @@
 
 // console.log(appendFrontend('hello'))
 
-function sumGreaterThan100(num1, num2) {
-    return num1 + num2 > 100;
+// function sumGreaterThan100(num1, num2) {
+//     return num1 + num2 > 100;
     
+// }
+// console.log(sumGreaterThan100(51, 50));
+
+function falseyOrTruthy(elem1, elem2){
+    return !elem1 ? elem1 : elem2;
 }
-console.log(sumGreaterThan100(51, 50));
+
+falseyOrTruthy (0, 5);
