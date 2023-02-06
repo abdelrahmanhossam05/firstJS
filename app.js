@@ -54,8 +54,24 @@
 // }
 // console.log(sumGreaterThan100(51, 50));
 
-function falseyOrTruthy(elem1, elem2){
-    return !elem1 ? elem1 : elem2;
+// function falseyOrTruthy(elem1, elem2){
+//     return !elem1 ? elem1 : elem2;
+// }
+
+// falseyOrTruthy (0, 5);
+
+function showRating(rating) {
+    let ratings = "";
+    for (let i = 0; i < Math.floor(rating); i++) {
+        ratings += "*";
+        if(i!== Math.floor(rating) - 1) {
+            ratings += " ";
+        }
+    }
+    if (!Number.isInteger(rating)){
+        ratings += " .";
+    }
+    return ratings;
 }
 
-falseyOrTruthy (0, 5);
+console.log(showRating(4.5));
