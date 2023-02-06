@@ -60,18 +60,24 @@
 
 // falseyOrTruthy (0, 5);
 
-function showRating(rating) {
-    let ratings = "";
-    for (let i = 0; i < Math.floor(rating); i++) {
-        ratings += "*";
-        if(i!== Math.floor(rating) - 1) {
-            ratings += " ";
-        }
-    }
-    if (!Number.isInteger(rating)){
-        ratings += " .";
-    }
-    return ratings;
+// function showRating(rating) {
+//     let ratings = "";
+//     for (let i = 0; i < Math.floor(rating); i++) {
+//         ratings += "*";
+//         if(i!== Math.floor(rating) - 1) {
+//             ratings += " ";
+//         }
+//     }
+//     if (!Number.isInteger(rating)){
+//         ratings += " .";
+//     }
+//     return ratings;
+// }
+
+// console.log(showRating(4.5));
+
+function sortLowToHigh(numbers) {
+    return numbers.sort((a, b) => a - b);
 }
 
-console.log(showRating(4.5));
+console.log(sortLowToHigh([1, 5, 0, 10, 4]))
