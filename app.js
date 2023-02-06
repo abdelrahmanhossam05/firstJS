@@ -50,7 +50,7 @@
 
 // function sumGreaterThan100(num1, num2) {
 //     return num1 + num2 > 100;
-    
+
 // }
 // console.log(sumGreaterThan100(51, 50));
 
@@ -76,8 +76,13 @@
 
 // console.log(showRating(4.5));
 
-function sortLowToHigh(numbers) {
-    return numbers.sort((a, b) => a - b);
+function sortHighToLow(numbers) {
+    return numbers.sort((a, b) => b.price - a.price);
 }
 
-console.log(sortLowToHigh([1, 5, 0, 10, 4]))
+console.log(sortHighToLow([
+    { id: 1, price: 50 },
+    { id: 2, price: 0 },
+    { id: 3, price: 500 }
+]
+));
