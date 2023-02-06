@@ -76,13 +76,25 @@
 
 // console.log(showRating(4.5));
 
-function sortHighToLow(numbers) {
-    return numbers.sort((a, b) => b.price - a.price);
+// function sortHighToLow(numbers) {
+//     return numbers.sort((a, b) => b.price - a.price);
+// }
+
+// console.log(sortHighToLow([
+//     { id: 1, price: 50 },
+//     { id: 2, price: 0 },
+//     { id: 3, price: 500 }
+// ]
+// ));
+
+async function postsByUser(userId) {
+    const promise = await fetch("https://jsonplaceholder.typicode.com/posts");
+
+    const result = await promise.json();
+
+    const posts = result.filter(element => element.userId === userId);
+
+    console.log(posts);
 }
 
-console.log(sortHighToLow([
-    { id: 1, price: 50 },
-    { id: 2, price: 0 },
-    { id: 3, price: 500 }
-]
-));
+postsByUser(4);
